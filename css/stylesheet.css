@@ -1,15 +1,24 @@
 body {
-    background-color: #B6F9EE
+    background-color:beige;
 }
 
 h1 {
-    color: #751796
+    color: #751796;
+    font-family: "Montserrat", sans-serif;
 }
 
-nav {
-    background-color: beige;
-    text-align: center;
+.headerfooter {
+    background-color:#B6F9EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:2px;
+    padding: 2px;
+    
 }
-#HeaderOne{
-    font-family: "Montserrat", sans-serif;
+
+.bodycontent{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
