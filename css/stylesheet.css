@@ -1,12 +1,10 @@
 body {
     background-color:beige;
 }
-
 h1 {
     color: #751796;
     font-family: "Montserrat", sans-serif;
 }
-
 .headerfooter {
     background-color:#B6F9EE;
     display: flex;
