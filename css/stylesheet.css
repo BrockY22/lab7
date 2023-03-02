@@ -1,7 +1,7 @@
 body {
     background-color:beige;
 }
-h1 {
+.index {
     color: #751796;
     font-family: "Montserrat", sans-serif;
 }
@@ -10,10 +10,50 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin:5px;
-    padding: 5px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+   
+}
+h1{
+    margin-block-start: 0;
 }
 .bodycontent{
     display: grid;
     grid-template-columns: 3fr 1fr;
+}
+
+nav{
+    display:flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ul > li {
+    list-style-type: none;
+    border-bottom: 2px solid black;
+    padding-top: 10px;
+}
+ul {
+    padding-inline-start: 0px;
+}
+ul > li:last-child{
+    border-color:transparent;
+}
+@media screen and (min-width: 600px) {
+    nav{
+        display:flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+    ul > li {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 2fr 1fr;
+    }
+    p + p + p {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    li > p:first-child{
+        margin-top: 0px;
+    }
 }
