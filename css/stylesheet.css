@@ -44,12 +44,12 @@ ul > li:last-child{
         flex-direction: row;
         gap: 12px;
     }
-    ul > li {
+    ul > li{
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 2fr 1fr;
     }
-    p + p + p {
+    p + p + p{
         grid-column: 2;
         grid-row: 1;
     }
