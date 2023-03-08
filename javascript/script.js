@@ -13,6 +13,7 @@ let course3 = {
 const courseList = [course1,course2,course3];
 
 do {
-    code = prompt("Enter a 4-digit code");
+    code=prompt("Enter a 4-digit code");
 }
 while(isNaN(code) || code.length != 4);
+
