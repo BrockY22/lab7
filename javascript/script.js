@@ -3,7 +3,7 @@ let course1 = {
     name: "Database Systems",
 }
 let course2 = {
-    code: "ACIT1420",
+    code: "ACIT 1420",
     name: "Intro to Systems Admin",
 }
 let course3 = {
@@ -17,16 +17,19 @@ do {
 }
 while(isNaN(code) || code.length != 4);
 
+let courseFound = false;
 for (let course of courseList){
-    if(course.code == code){
+    if(course.code.includes(code)){
         console.log(`Yes I am taking the course ${course.code} - ${course.name}`);
+        courseFound = true;
+        break;
     }
-    else{
-        let newCourse = {
-            code,
-            name: null,
-        }
-        courseList.push(newCourse);
-        console.log(courseList);
+}
+if(!courseFound){
+    let newCourse = {
+        code,
+        name: null,
     }
+    courseList.push(newCourse);
+    console.log(courseList);
 }
