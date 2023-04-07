@@ -36,6 +36,9 @@ ul {
 ul > li:last-child{
     border-color:transparent;
 }
+.changeBGGreen{
+    background-color: green;
+}
 @media screen and (min-width: 600px) {
     nav{
         display:flex;
